@@ -153,9 +153,14 @@ h4{
 small{
   color: #555;
 }
-i.menu {
+
+
+.menu-icon{
   display: none;
   margin-left: 20px;
+}
+i{
+  color: gold;
 }
 
 @media screen and (max-width:700px) {
@@ -166,7 +171,7 @@ i.menu {
     background: #333;
     width: 100%;
     overflow: hidden;
-    transition: max-height o.5s;
+    transition: max-height 0.5s;
   }
   ul li{
     display: block;
@@ -174,7 +179,10 @@ i.menu {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  i.menu{
+  ul li a:hover{
+    color: #fff;
+  }
+  .menu-icon{
     display: block;
     cursor: pointer;
   }
